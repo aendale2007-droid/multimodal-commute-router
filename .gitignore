@@ -22,3 +22,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Ignore huge map & transit data files
+otp-data/*.pbf
+otp-data/*.zip
+otp-data/*.obj
+
+# Java / IntelliJ
+backend/target/
+backend/.idea/
+*.iml
+
+# React Native / Expo / Node
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+.env
+
