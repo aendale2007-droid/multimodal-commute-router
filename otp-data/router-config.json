@@ -1,0 +1,16 @@
+{
+  "updaters": [
+    {
+      "type": "vehicle-rental",
+      "network": "lime_seattle",
+      "sourceType": "gbfs",
+      "language": "en",
+      "frequency": "1m",
+      "allowKeepingRentedVehicleAtDestination": false,
+      "geofencing": {
+        "enabled": false
+      },
+      "url": "https://lime.bike"
+    }
+  ]
+}
