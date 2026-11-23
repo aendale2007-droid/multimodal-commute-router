@@ -39,3 +39,7 @@ mobile/.expo/
 mobile/dist/
 .env
 
+# Ignore all .env files everywhere
+.env
+**/.env
+
