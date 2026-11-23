@@ -6,7 +6,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Slider from '@react-native-community/slider';
 
 
-const API_URL = 'http://IP_HERE/api/plan';
+const BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8082';
+const API_URL = `${BASE_URL}/api/plan`;
+
 
 interface RouteLeg {
   mode: string;
