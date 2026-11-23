@@ -120,6 +120,7 @@ public class MultimodalPlannerService {
             ));
         }
 
+        scored.removeIf(item -> item.finalScore() <= 0.0);
         scored.sort(Comparator.comparingDouble(RankedItinerary::finalScore).reversed());
         return scored;
     }

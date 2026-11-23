@@ -31,8 +31,13 @@ public class RideshareEstimatorService {
                 toName,
                 durationMinutes,
                 Math.round(roadDistanceMeters),
-                String.format("Uber/Lyft (~$%.2f)", estimatedCost)
+                String.format("Uber/Lyft (~$%.2f)", estimatedCost),
+                List.of(
+                        new RankedItinerary.Coord(fromLat, fromLon),
+                        new RankedItinerary.Coord(toLat, toLon)
+                )
         );
+
     }
 
     public RankedItinerary buildDirectRideshareItinerary(double fromLat, double fromLon, double toLat, double toLon) {
