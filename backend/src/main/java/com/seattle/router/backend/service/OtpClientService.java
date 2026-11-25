@@ -122,7 +122,7 @@ public class OtpClientService {
                 ));
             }
 
-            double cost = usedTransit ? 3.00 : 0.00;
+            double cost = transitLegs >= 2 ? 6 : (transitLegs == 1 ? 3.00 : 0.00);
             int transfers = Math.max(0, transitLegs - 1);
 
             results.add(new RankedItinerary(
